@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Adivina el numero secreto</title>
+
+</head>
+
+<body>
+    <main>
+
+        <section id="contenedorPrincipal">
+            <header>
+                <h1 class="texto1"> ¡Adivina el número secreto de Anubis! </h1>
+            </header>                 
+            <div class="contenedorPrincipal">
+                <p class="instrucciones">Mi número se encuentra entre el 1 y el 15</p>
+                <p class="intentos1" id="intentos1">Tienes 4 intentos</p>                
+                    <div class="contenedor">
+                        <img src="./imagen/5d6083098111617cb48d049d8bc0b068.jpg" class="imagenCaja">
+                            <div class="contenedorTexto" >
+                                
+                                <h2 class="texto2" id="texto2"> Acertaste el número secreto </h2>
+                                <h3 class="texto3" id="texto3"> No acertaste el numero es mayor</h3>
+                                <h4 class="texto4" id ="texto4"> No acertaste el numero es menor</h4>                                  
+                                <input type="numeros" id="valorUsuario"min=1 max="3" class="CajaTexto">
+                                <div class="botones";>
+                                    <button onclick="ejecutarIntento();" class="ejecutarIntento">Ejecutar</button>
+                                    <button onclick="reinicio();" class="reinicio" id="reinicio" disabled>Reiniciar juego</button>
+        
+                                </div>
+        
+                            </div>            
+                    </div>
+            </div>    
+    
+        </section>
+        <section id="contenedorGameover">
+            <img src="./imagen/game over 3.jpg" class="gameover" id="gameover">   
+            <button onclick="reinicio();" class="nuevoJuego" id="nuevoJuego">Nuevo juego</button>  
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <footer>
+        <p class="copyright">&copy copyright Hernán Pablo Boggini - 2024</p>
+    </footer>
+</body>
+</html>
